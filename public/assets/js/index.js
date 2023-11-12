@@ -165,6 +165,7 @@ const renderNoteList = async (notes) => {
     }
 
     // Set the data-note attribute with the entire note object
+    const noteText = jsonNotes.find((note) => note.id === noteId)?.text || '';
     liEl.dataset.note = JSON.stringify({ id: noteId, title: text, text: noteText });
 
     return liEl;
