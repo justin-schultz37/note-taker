@@ -1,4 +1,3 @@
-
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -9,15 +8,29 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
+const dbPath = path.join(__dirname, './db/db.json');
+
+
+app.get('/api/notes', (req, res) => {
+    fs.readFile(dbPath, 'utf8', (err, data) => {
+        if (err) {
+            console.error(err);
+            return res.status(500).send('Internal Server Error');
+        }
+
+        const notes = JSON.parse(data);
+        res.json(notes);
+    });
+});
+
+
 app.get('/notes', (req, res) =>
     res.sendFile(path.join(__dirname, 'public/notes.html'))
 );
 
-const dbPath = path.join(__dirname, './db/db.json');
 
 app.post('/api/notes', (req, res) => {
     const newNote = req.body;
-
 
     fs.readFile(dbPath, 'utf8', (err, data) => {
         if (err) {
@@ -27,7 +40,6 @@ app.post('/api/notes', (req, res) => {
 
         let notes = JSON.parse(data);
         notes.push(newNote);
-
 
         fs.writeFile(dbPath, JSON.stringify(notes, null, 2), (err) => {
             if (err) {
