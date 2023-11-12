@@ -1,19 +1,46 @@
-# Note Taker Starter Code
+# <p align="center">Title: Note Taker</p> <p align="center">![Static Badge](https://img.shields.io/badge/License-MIT-blue)</p>
 
-AS A small business owner
-I WANT to be able to write and save notes
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
+## Description
+This note taker application allows a user the ability to create  new notes, recall old ntes, and delete notes.
 
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a "Save Note" button and a "Clear Form" button appear in the navigation at the top of the page
-WHEN I click on the Save button
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes and the buttons in the navigation disappear
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column and a "New Note" button appears in the navigation
-WHEN I click on the "New Note" button in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column and the button disappears
+![Article Preview](./public/assets/media/screenshot-localhost_3001-2023.11.12-13_54_21.png)    
+## Installation
+Node.js
+Express.js
+FS
+Path
+UUID
+
+## Usage
+This app can be used to create store and delete notes submitted by user. 
+    
+## Contributing
+To make contributions please follow the link to [Note-Taker Repo](https://github.com/justin-schultz37/note-taker)
+
+Starter code provided by [miniature-eureka](https://github.com/coding-boot-camp/miniature-eureka)
+    
+
+## License
+For more information, view the [MIT LICENSE](https://choosealicense.com/licenses/mit/) link
+
+MIT License
+
+Copyright (c) [2023] [Justin Schultz]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
